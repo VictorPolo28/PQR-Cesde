@@ -1,0 +1,36 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+.card {
+    flex: 50%;
+    margin: 10px;
+    border: 8px ;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    
+}
+
+.card .content {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+.card .footer {
+    background-color: grey ;
+    padding: 10px;
+}
