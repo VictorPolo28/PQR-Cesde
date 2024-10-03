@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PQR FORMATO
+    </title>
+</head>
+<body>
+    <form action=""  method="post">
+        <label for="politicas_deprivacidad" ><a href=" https://www.cesde.edu.co/wp-content/uploads/2023/08/Politica-Proteccion-Datos-Personales-Agosto-2023-PDF.pdf https://www.cesde.edu.co/wp-content/uploads/2023/08/Politica-Proteccion-Datos-Personales-Agosto-2023-PDF.pdf">Politicas de privacidad y manejo de datos </a></label> 
+        <label for="acepta">Si</label>
+        <input type="radio" name="acepta" id="acepta"  required> 
+        <label for="niega">No</label>
+        <input type="radio" name="niega" id="niega"><br>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required> <br>
+        <label for="email">Correo Electronico: </label>
+        <input type="email" name="email" id="email" placeholder="Correo Electronico" required><br>
+        <label for="identificacion">Numero de identificacion: </label>
+        <input type="number" name="identificacion" id="identificacion"   maxlength="14"  placeholder="Numero de identificacion" required><br>
+        <label for="contacto">Numero decontacto:</label>
+        <input type="tel" name="contacto" id="contacto" placeholder="numero de contacto"  maxlength="10" required> <br>
+        <fieldset >
+            <legend>Elija que desea realizar:</legend>
+            <input type="radio" name="opcion" id="Queja" >
+            <label for="Queja">Queja</label><br>
+            <input type="radio" name="opcion" id="Peticion">
+            <label for="Peticion">Peticion</label><br>
+            <input type="radio" name="opcion" id="Solicitud">
+            <label for="Solicitud">Solicitud</label> <br>
+            <input type="radio" name="opcion" id="Reclamo">
+            <label for="Reclamo">Reclamo</label> <br>
+            <input type="radio" name="opcion" id="Felicitaciones">
+            <label for="Felicitaciones">Felicitaciones</label><br>
+        </fieldset>
+        <label for="detalles">Ingrese  los detalles de su solicitud</label> <br>
+        <textarea name="detalles" id="detalles" style="width: 904px; height: 150px;" > </textarea> <br>
+
+        <button type="submit" value="Enviar">Enviar</button>
+        <button type="reset" value="reset">Reiniciar</button>
+    </form>
+</body>
+</html>
