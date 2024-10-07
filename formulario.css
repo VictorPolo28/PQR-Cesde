@@ -1,0 +1,92 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+    display: flex; /* Usar flexbox */
+    align-items: flex-start; /* Alinear elementos en la parte superior */
+	text-align: center;
+}
+h1 {
+	margin: 21.44px 100px 21.44px 0; 
+}
+
+img {
+    width: 160px; /* Ajusta el ancho según sea necesario */
+    height: 100px; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    position: relative; /* Asegura que no se superponga */
+
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px;
+}
+
+.formulario {
+
+	max-width: 400px;
+	margin: 30px auto;
+	background-color: #f7f7f7;
+	padding: 20px;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+textarea{
+
+	max-width: 100%;
+	min-width: 400px;
+	min-height: 100px;
+}
+
+.contenedor_enviar{
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+
+button[type="submit"] {
+	
+	background-color: #333;
+	color: #fff;
+	padding: 15px 50px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	
+}
+
+button[type="submit"]:hover {
+	background-color: #444;
+
+}
