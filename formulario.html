@@ -21,13 +21,29 @@
 		<form id="pqr-form">
 			<div class="formulario">
 
+				
+				<label>¿Acepta la <strong>Política de tratamiento y protección de datos personales</strong> de la
+					institución?</label>
 
-				<label for="nombre">Nombre:</label>
-				<input type="text" id="nombre" name="nombre" required>
+				<p><a
+						href="https://www.cesde.edu.co/wp-content/uploads/2023/08/Politica-Proteccion-Datos-Personales-Agosto-2023-PDF.pdf">
+						Ver política
+					</a></p>
+
+				<div class="politica">
+					<input type="radio" id="acepta_si" name="terminos" value="si"  required > 
+					<label for="acepta_si">Sí</label>
+
+					<input type="radio" id="acepta_no" name="terminos" value="no" >
+					<label for="acepta_no">No</label>
+				</div>
+
+				<label for="nombre">Nombre</label>
+				<input type="text" id="nombre" name="nombre"  placeholder="Ingrese su respuesta" required>
 
                 <label for="tipo de usuario"> Usuario</label>
-				<select id="tipo-usuario" name="tipo-usuario">
-					<option value="Elegir"></option>
+				<select id="tipo-usuario" name="tipo-usuario" required>
+					<option value="">Seleccione su respuesta</option>
 					<option value="estudiante">Estudiante</option>
                     <option value="Egresado">Egresado</option>
                     <option value="docente">Docente</option>
@@ -35,23 +51,24 @@
                 </select>
             
                 
-				<label for="correo">Correo electrónico:</label>
-				<input type="email" id="correo" name="correo" required>
+				<label for="correo">Correo electrónico</label>
+				<input type="email" id="correo" name="correo"  placeholder="Ingrese su respuesta" required>
                 
-				<label for="telefono">Teléfono:</label>
-				<input type="tel" id="telefono" name="telefono">
+				<label for="telefono">Teléfono</label>
+				<input type="tel" id="telefono" name="telefono"  placeholder="Ingrese su respuesta" required>
                 
-				<label for="tipo-pqr">Tipo de PQR:</label>
-				<select id="tipo-pqr" name="tipo-pqr">
+				<label for="tipo-pqr">Tipo de PQR</label>
+				<select id="tipo-pqr" name="tipo-pqr" required>
+					<option value="">Seleccione su respuesta</option>
 					<option value="petición">Petición</option>
 					<option value="queja">Queja</option>
                     <option value="reclamo">Reclamo</option>
                     <option value="reclamo">Sugerencias</option>
                     <option value="reclamo">Felicitaciones</option>
 				</select>
-				<label for="descripcion">Descripción:</label>
-				<textarea id="descripcion" name="descripcion" required></textarea>
-				<div class="contenedor_enviar"><button type="submit">Enviar</button></div>
+				<label for="descripcion">Descripción</label>
+				<textarea id="descripcion" name="descripcion"  placeholder="Ingrese su respuesta" required></textarea>
+				<div class="contenedor_enviar"><button type="submit">Enviar</button> <button type="reset">Resetear</button></div>
 			</div>
 
 			<div>

@@ -60,6 +60,14 @@ select {
 	box-sizing: border-box;
 }
 
+
+.politica {
+    margin-bottom: 25px;
+    display: flex; 
+    align-items: center;
+    
+}
+
 textarea{
 
 	max-width: 100%;
@@ -75,7 +83,7 @@ textarea{
 }
 
 
-button[type="submit"] {
+button {
 	
 	background-color: #333;
 	color: #fff;
@@ -83,10 +91,11 @@ button[type="submit"] {
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+	margin: 0 10px 0 0;
 	
 }
 
-button[type="submit"]:hover {
+button:hover {
 	background-color: #444;
 
 }

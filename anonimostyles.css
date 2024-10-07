@@ -47,8 +47,8 @@ label {
     font-weight: bold;
 }
 
-input,[type="email"],
-input,[type="tel"], 
+input[type="email"],
+input[type="tel"], 
 textarea,
 select {
 	width: 100%;
@@ -57,6 +57,13 @@ select {
 	border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+
+}
+
+.politica {
+    margin-bottom: 25px;
+    display: flex; 
+    align-items: center;
 
 }
 
@@ -72,15 +79,16 @@ textarea{
     align-items: center;
 }
 
-button[type="submit"]{
+button{
     background-color: #333;
     color: #fff;
     padding: 15px 50px;
     border-radius: 5px;
     cursor: pointer;
+	margin: 0 10px 0 0;
 
 }
 
-button[type="submit"]:hover {
+button:hover {
 	background-color: #444;
 }
