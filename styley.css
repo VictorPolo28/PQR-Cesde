@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(225deg, #004A87 0%, #78BE20 66%, #FFFFFF 100%);
+    background:linear-gradient(#e61d74, #fff);
     font-family:  sans-serif;
     margin: 0;
     overflow: hidden;
