@@ -1,16 +1,76 @@
-body,
-html {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-    background: linear-gradient(#e61d74, #fff);
+    text-decoration: none;
 }
 
-/*Ajusted del color del texto*/
-h1,
-p {
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(400deg, #e61d74, #e61d74 50%, #fff);
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 16px rgba(240, 236, 236, 0.959);
+
+}
+
+.titulo {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.titulo h1 {
     color: #fff;
+    text-shadow: 2px 2px 5px rgba(235, 226, 226, 0.5);
+    font-size:50px;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.fondo {
+    
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    
+
+
+}
+
+.subtitulo {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(235, 226, 226, 0.5);
+    font-size: 32px;
+}
+
+
+h2,
+p {
+    color: #fff; 
 }
 
 .cards {
@@ -18,8 +78,9 @@ p {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    height: 100vh;
-    margin-top: 50px;
+    margin-top: 0px;
+    text-decoration: none;
+    text-align: center;
 }
 
 /*Ajustes de las   clase card */
@@ -31,7 +92,7 @@ p {
     flex-direction: column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    background-color: #e70668;
+    background-color: #f768a6;
     border-radius: 8px;
     padding: 30px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -51,12 +112,104 @@ p {
 }
 
 .card .footer {
-    background-color: rgb(199, 194, 198);
+    background-color:  #f768a6; 
     padding: 8px;
     border-radius: 8px;
+    margin-top: 10px;
 }
 
 button {
-    background-color: rgb(199, 194, 198);
+    background-color: #f768a6;
     border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto en blanco */
+    padding: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+footer ul {
+    list-style: none; /* Elimina viñetas */
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+footer li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+    .fondo {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+    
+    footer ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Dispositivos móviles (pantallas pequeñas) */
+@media (max-width: 480px) {
+    .logo {
+        width: 120px;
+        /* Reduce el tamaño del logo */
+    }
+
+    .titulo h1 {
+        font-size: 24px;
+        /* Reduce el tamaño del texto del título */
+    }
+
+    .fondo {
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        flex: 100%;
+        padding: 20px;
+    }
+
+    .subtitulo {
+        font-size: 18px;
+        /* Ajusta el tamaño del subtítulo */
+    }
+
+    h2,
+    p {
+        font-size: 16px;
+        /* Ajusta el tamaño de los textos */
+    }
 }
