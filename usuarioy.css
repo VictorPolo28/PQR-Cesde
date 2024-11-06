@@ -1,51 +1,92 @@
-::before,
-::after {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-}
-head, body {
-    width: 100%;
-    height: 100%;
-}
+/* Configuración del body */
 body {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background:linear-gradient(#e61d74, #fff);
-    font-family:  sans-serif;
-    margin: 0;
-    overflow: hidden;
-}
-main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 150px;
-    padding: 40px ;
-    max-width: 100%; /* Evita que el contenedor exceda el ancho de la pantalla */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    background: linear-gradient(#e61d74, #fff);
+    font-family: sans-serif;
 }
 
+/* Estilo de encabezado */
+header {
+     margin: 30px;
+}
+
+/* Estilo de main */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para pantallas grandes */
+    gap: 150px;
+    padding: 40px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+/* Estilo de footer */
+footer {
+    width: 100%;
+    margin-top: 50px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+ul,li {
+    list-style-type: none;
+}
+
+.h2footer {
+    margin-top: 30px;
+    
+}
+
+/* Estilo de la imagen del logo */
+.logo {
+    width: 180px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 16px rgba(240, 236, 236, 0.959);
+}
+
+/* Configuración del título */
+.titulo {
+    display: flex;
+    align-items: center;
+}
+
+.titulo h1 {
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(235, 226, 226, 0.5);
+    font-size: 50px;
+}
+
+/* Estilo de las tarjetas */
 .card {
     position: relative;
     display: flex;
     align-items: flex-end;
-    width: 100%; /* Las tarjetas ocupan todo el espacio de la columna */
-    max-width: 350px; /* Limita el tamaño máximo de la tarjeta */
+    max-width: 350px;
     height: 500px;
     padding: 30px 25px;
     background: #fff;
-    box-shadow: 0px 7px 10px  rgba( 0, 0, 0, 0.5);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease;
     border-radius: 45px;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(20px);
 }
 
@@ -54,18 +95,17 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(208, 195, 195, 0.5), rgb(255, 0, 255));
-    transition: all 0.5s;
     opacity: 0;
+    transition: all 0.5s;
     border-radius: 40px;
 }
 
-.card:hover:after{
+.card:hover::after {
     opacity: 1;
-} 
+}
 
 .card > img {
     width: 100%;
@@ -97,7 +137,6 @@ main {
 }
 
 .card .info p {
-    letter-spacing: 1px;
     font-size: 15px;
     margin: 10px 0 25px;
     line-height: 130%;
@@ -112,11 +151,29 @@ main {
     font-weight: bold;
     border-radius: 50px;
     cursor: pointer;
-    transition:  all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 .card .info .btn:hover {
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-    background-color:  #4b5563;
+    background-color: #4b5563;
     color: #fff;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr; /* Una sola columna en dispositivos pequeños */
+        gap: 20px; /* Ajusta el espacio entre tarjetas */
+        padding: 20px;
+    }
+
+    .card {
+        max-width: 100%; /* La tarjeta ocupa todo el ancho disponible */
+        height: auto; /* Permite que la altura se ajuste al contenido */
+    }
+
+    footer {
+        margin-top: 20px; /* Menos espacio arriba del footer en móviles */
+    }
 }
