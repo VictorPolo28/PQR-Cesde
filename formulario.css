@@ -15,11 +15,11 @@ body {
 /* Encabezado */
 header {
     position: relative;
-    background-color: #1a73e8; /* Azul claro */
-    color: white;
+    /* background-color: #e61d74;  */
+    background: linear-gradient(to right,#e61d74, rgb(255, 255, 255));
     text-align: center;
     padding: 2em 0; /* Menos espacio arriba y abajo */
-    border-radius: 15px;
+    
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -28,18 +28,24 @@ header img {
     top: 20px;
     left: 20px;
     width: 100px; /* Tamaño adecuado para la imagen */
+    /* margin-left: 240px;
+    margin-right: 0px;
+    margin-top: 0px; */
     height: auto;
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 10%;
+    box-shadow: 4px 4px 16px rgba(240, 236, 236, 0.959); /* Sombra suave */
 }
 
 header h1 {
     font-size: 2.5em;
     font-weight: 700;
     text-transform: uppercase;
+    color: white;
     margin-top: 0; /* Elimina el margen superior */
     padding-left: 130px; /* Espacio para la imagen */
+    text-shadow: 0 3px 0 rgba(65, 64, 64, 0.5);
 }
+
 
 /* Estilos del contenido principal */
 main {
